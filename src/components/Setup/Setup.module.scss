@@ -1,0 +1,19 @@
+@import '../../common/global.scss';
+
+.setup {
+  width: 100%;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  height: calc(100% - 150px);
+
+
+  p {
+    @include text-normal-roboto;
+  }
+
+  button {
+    width: 200px;
+    align-self: center;
+  }
+}

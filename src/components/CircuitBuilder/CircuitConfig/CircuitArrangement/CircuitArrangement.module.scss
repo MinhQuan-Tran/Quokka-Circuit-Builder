@@ -1,0 +1,10 @@
+@import "../../../../common/global";
+
+.circuitArrangement {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  background: white;
+  height: 100%;
+  width: calc(100% - 2em);
+}

@@ -1,0 +1,25 @@
+
+.dropdown {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  font-family: Lato, sans-serif;
+  justify-content: space-between;
+  font-weight: 800;
+  row-gap: 15px;
+  color: #222225;
+  background: #F8F9FB;
+  line-height: 20px;
+  cursor: default;
+
+  &.accountMenuDropdown {
+    padding-top: 8px;
+    z-index: 999;
+    top: 50px;
+    right: 40px;
+    width: 190px;
+    border-bottom: black;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+
+  }
+}

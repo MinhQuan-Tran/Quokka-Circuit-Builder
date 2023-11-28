@@ -1,0 +1,49 @@
+@import "src/common/global";
+
+.gateMenu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 260px;
+  height: 100%;
+  z-index: 1;
+  transition: all 0.3s ease-in-out;
+}
+
+.close {
+  right: -260px;
+}
+
+.content {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: white;
+  padding: 0 15px;
+  user-select: none;
+  box-sizing: border-box;
+  border: 1px solid #222b3d;
+  overflow-y: scroll;
+  border-radius: 8px 0 0 8px;
+
+  > *:not(:last-child) {
+    padding-bottom: 15px;
+    border-bottom: 1px solid black;
+  }
+}
+
+.openBtn {
+  position: absolute;
+  top: 50%;
+  transform: translate(calc(-50% - 0.75em), -50%) rotateZ(-90deg);
+  background: linear-gradient(-90deg, #1f2e4d, #63718b);
+  box-sizing: border-box;
+  padding: 0.25em 1.2em;
+  z-index: -1;
+  color: white;
+  border-bottom: none;
+  border-radius: 8px 8px 0 0;
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}

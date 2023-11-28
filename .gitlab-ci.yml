@@ -1,0 +1,25 @@
+image: nikolaik/python-nodejs:python3.10-nodejs16-alpine
+
+cache:
+  paths:
+    - node_modules/
+    - .yarn
+
+variables:
+  REGION: ap-southeast-2
+
+before_script:
+  - yarn
+
+stages:
+  - deploy
+
+deploy:
+  stage: deploy
+  only:
+    refs:
+      - develop
+  script:
+    - pip3 install awscli
+    - CI=false yarn build
+    - aws --region $REGION s3 cp --recursive ./build/ s3://theq-webapp

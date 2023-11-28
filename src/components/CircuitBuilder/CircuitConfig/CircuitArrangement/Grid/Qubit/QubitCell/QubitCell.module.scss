@@ -1,0 +1,13 @@
+.qubitCell {
+  fill: white;
+  z-index: 1;
+  opacity: 0.2;
+
+  .hover {
+    fill:#B5C2D7;
+    stroke: none;
+    stroke-width: 3;
+    stroke-dasharray: 3,3;
+    stroke-linejoin: round;
+  }
+}

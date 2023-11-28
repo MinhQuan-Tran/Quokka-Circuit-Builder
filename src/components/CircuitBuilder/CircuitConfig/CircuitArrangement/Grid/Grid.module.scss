@@ -1,0 +1,28 @@
+.grid {
+  position: relative;
+  width: 100%;
+
+  z-index: 1;
+  outline: none;
+
+  .selectionBox {
+    cursor: crosshair;
+    stroke: #6090ef;
+    stroke-width: 2;
+    fill: rgba(96, 144, 239, 0.15);
+    border: 2px solid #6090ef;
+    box-sizing: border-box;
+    border-radius: 2px;
+  }
+
+  .addQubitActionBtn {
+    filter: url(#circleShadow);
+    .addQubitCircle {
+      fill: url(#circleDefaultBkg);
+      &:hover,
+      &:active {
+        fill: url(#circleHoveredBkg);
+      }
+    }
+  }
+}

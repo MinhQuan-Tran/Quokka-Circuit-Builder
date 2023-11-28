@@ -1,0 +1,96 @@
+$lato-font : Lato, sans-serif;
+$roboto-font : Roboto, sans-serif;
+$lato-font-bold: Lato-Bold, sans-serif;
+@mixin text-nav-button {
+  font-family: $lato-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16.8px;
+}
+
+
+@mixin text-nav-button-bold {
+  font-family: $lato-font;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16.8px;
+}
+
+@mixin text-menu-button-small {
+  font-family: $lato-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14.4px;
+}
+
+@mixin text-menu-button-small-bold {
+  font-family: $lato-font;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 14.4px;
+}
+
+@mixin toolbar-run-button {
+
+}
+
+@mixin submit-button {
+  align-self: center;
+  width: 150px;
+  height: 37px;
+  font-family: $lato-font;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 17px;
+  color: white;
+  /* identical to box height */
+  text-align: center;
+  text-transform: uppercase;
+  background: linear-gradient(93.58deg, #2B2B2B 0%, #1E2023 0.01%, #1F2E4D 100%);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+}
+
+@mixin button-selected-light {
+
+}
+
+
+@mixin link-button {
+  align-self: center;
+  width: 150px;
+  height: 37px;
+  font-family: $lato-font;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14.4px;
+  color: #1F2E4D;
+  /* identical to box height */
+  text-align: center;
+  text-transform: uppercase;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+@mixin underlined-button {
+  font-family: $lato-font;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14.4px;
+
+  color: #1F2E4D;
+  /* identical to box height */
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-decoration: underline;
+}

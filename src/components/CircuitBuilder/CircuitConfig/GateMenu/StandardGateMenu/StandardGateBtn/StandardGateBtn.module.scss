@@ -1,0 +1,31 @@
+@import "src/common/global";
+
+.gate {
+  position: relative;
+
+  .tooltip {
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 5px;
+    position: fixed;
+    z-index: 1;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    background: white;
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 8px 0 8px 8px;
+    box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 0.5);
+    text-align: left;
+
+    .title {
+      font-weight: bold;
+      font-size: 1.1em;
+    }
+  }
+
+  &:hover .tooltip {
+    visibility: visible;
+  }
+}

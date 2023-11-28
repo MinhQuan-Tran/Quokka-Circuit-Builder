@@ -1,0 +1,22 @@
+@import "src/common/global.scss";
+
+.GatePreview {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+  border-radius: 12px;
+  padding: 8px;
+  border: 2px solid #222b3d;
+  transform: translateX(4px);
+  z-index: 1;
+
+  line {
+    stroke: #6076a0;
+    stroke-width: 2;
+    z-index: 1;
+    position: relative;
+    stroke-linecap: square;
+  }
+}

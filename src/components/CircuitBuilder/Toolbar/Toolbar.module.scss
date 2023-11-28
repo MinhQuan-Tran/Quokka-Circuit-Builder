@@ -1,0 +1,54 @@
+@import '../../../common/global.scss';
+
+.toolbar {
+  height: 63px;
+  width: calc(100% - 20px);
+  display: flex;
+  flex-direction: row;
+  grid-row: 1;
+  grid-column: 1 / span 2;
+  background: $ebony-clay;
+  padding-left: 20px;
+  color: white;
+
+  .fileManager {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    img {
+      margin-left: 13px;
+      margin-right: 13px;
+      align-self: center;
+      width: 15px;
+      height: 15px;
+    }
+
+    input {
+      &.circuitEditableTitle {
+        outline: none;
+        display: inline;
+        border: none;
+        background: transparent;
+        color: white;
+        font-size: 19px;
+        line-height: 22.8px;
+        font-weight: 600;
+        font-family: lato, sans-serif;
+      }
+    }
+  }
+
+  .runButton {
+    display: flex;
+    align-self: end;
+    margin-left: auto;
+    height: 100%;
+    align-items: center;
+    flex-direction: row;
+    hr {
+      height: 35px;
+      border: 1px solid #C5D2DC;
+    }
+  }
+
+}

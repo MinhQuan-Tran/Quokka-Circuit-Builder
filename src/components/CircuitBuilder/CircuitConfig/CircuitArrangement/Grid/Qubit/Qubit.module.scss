@@ -1,0 +1,39 @@
+.qubit {
+  width: 100%;
+  position: absolute;
+  line {
+    stroke: #6076A0;
+    stroke-width: 2;
+    z-index: 1;
+    position: relative;
+    stroke-linecap: square;
+  }
+
+  .qubitSelectionBox {
+    fill: transparent;
+    &.selected {
+      filter: url(#selectedQubitShadow);
+    }
+
+    .selectionBox {
+      &:hover {
+        stroke-width: 2;
+        z-index: 2;
+        stroke: #5C7DFF;
+        border-radius: 4px;
+      }
+
+      &.selected {
+        filter: url(#selectedQubitShadow);
+        stroke-width: 2;
+        fill: url(#selected_qubit_background);
+        z-index: 2;
+        stroke: #5C7DFF;
+        border-radius: 4px;
+
+      }
+    }
+  }
+
+}
+

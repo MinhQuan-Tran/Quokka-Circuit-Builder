@@ -1,0 +1,7 @@
+@import '../../../common/global';
+
+.formLabel {
+  h2 {
+    @include  text-h2();
+  }
+}

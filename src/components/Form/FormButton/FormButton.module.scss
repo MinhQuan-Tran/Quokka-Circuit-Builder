@@ -1,0 +1,24 @@
+.formButton {
+  cursor: pointer;
+  align-self: center;
+  margin: 18px 31px;
+  width: 150px;
+  height: 37px;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 17px;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  background: linear-gradient(93.58deg, #2B2B2B 0%, #1E2023 0.01%, #1F2E4D 100%);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+
+  &:hover {
+    background: linear-gradient(93.58deg, #000000 0%, #1E2023 0.01%, #021E56 100%);
+  }
+
+  &.large {
+    width: 213px;
+  }
+}

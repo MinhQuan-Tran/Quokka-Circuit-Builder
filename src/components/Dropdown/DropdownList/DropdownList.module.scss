@@ -1,0 +1,19 @@
+@import "../../../common/global.scss";
+
+.dropdownList {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 140px;
+  font-family: lato, sans-serif;
+
+  &.accountMenuDropdown {
+    border-top: 1px solid #DEE2EA;
+    width: 100%;
+  }
+
+  &.burgerMenuDropdown {
+    background: linear-gradient(180deg, #DADEE7 0%, #F7F8FC 100%);
+    width: 100%;
+  }
+}

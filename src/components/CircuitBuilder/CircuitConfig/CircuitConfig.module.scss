@@ -1,0 +1,13 @@
+.circuitConfig {
+  position: relative;
+  background: white;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  height: 95%;
+  width: 100%;
+
+  &.disabled {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+}

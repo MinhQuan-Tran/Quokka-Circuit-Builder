@@ -1,0 +1,16 @@
+.compoundGate {
+  .rectBkg {
+    fill: url(#gateBkg);
+  }
+}
+// style={{marginLeft: "-10px", zIndex:100, backgroundColor:"white", width:"52px", height:"19px"}}
+.toottiptext{
+  margin-left: -10px;
+  z-index: 100;
+  width: fit-content;
+  height: 19px;
+  background: #FFFFFF;
+  border: 1px solid #C8C7D9;
+  border-radius: 2px;
+  padding: 3px 7px;
+}

@@ -1,0 +1,18 @@
+.circuitProcessingInfo {
+  display: flex;
+  flex-direction: column;
+  grid-row: 1;
+  column-gap: 17px;
+  grid-column: 1 / span 2;
+  align-items: flex-start;
+  margin-left: 35px;
+  .firstLine {
+    display: flex;
+    flex-direction: row;
+    column-gap: 11px;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+
+}

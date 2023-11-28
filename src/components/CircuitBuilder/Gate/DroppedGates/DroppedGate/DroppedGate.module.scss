@@ -1,0 +1,8 @@
+.DroppedGate {
+  cursor: default;
+
+  &.selected {
+    stroke-width: 2;
+    stroke: #5c7dff;
+  }
+}

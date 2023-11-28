@@ -1,0 +1,67 @@
+$lato-font : Lato, sans-serif;
+$roboto-font : Roboto, sans-serif;
+
+
+
+@mixin text-normal-small {
+  font-family: $lato-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14.4px;
+}
+
+
+@mixin text-bold-lato {
+  font-family: $lato-font;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 14.4px;
+}
+
+@mixin text-uppercase-lato {
+  font-family: $lato-font;
+  font-style: normal;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 14.4px;
+}
+
+@mixin text-h1 {
+  font-family: $lato-font;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+@mixin text-h2 {
+  font-family: $lato-font;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+
+  color: #222225;
+}
+
+
+@mixin text-h4 {
+  font-family: $lato-font;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19.2px;
+}
+
+
+@mixin text-normal-roboto {
+  font-family: $roboto-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14.06px;
+}

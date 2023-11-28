@@ -1,0 +1,48 @@
+@import '../../common/global.scss';
+
+.circuitOutput {
+  display: flex;
+  flex-direction: column;
+  margin-right: 38px;
+  height: calc(100% - 150px);
+
+  @media screen and (max-width: $mobile-max-width) {
+    display: none;
+  }
+
+  h2 {
+    align-self: flex-start;
+    margin-left: 35px;
+  }
+
+  img {
+    &.underlayImage {
+      position: absolute;
+      right: 0px;
+      bottom: 0px;
+      width: 50vh;
+      height: 60vh;
+      color: #0000000D;
+      z-index: 0;
+      opacity: 1;
+    }
+
+  }
+
+  .prompt {
+    align-self: flex-start;
+    margin-left: 35px;
+    text-align: start;
+    p {
+      &.warningMessage {
+        color: red;
+        .underlined {
+          margin-left: 5px;
+          text-decoration: underline;
+        }
+      }
+
+    }
+  }
+
+}

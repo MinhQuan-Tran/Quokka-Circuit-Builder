@@ -1,0 +1,104 @@
+@import "../../../../common/global.scss";
+
+.dropdownItem {
+  z-index: 2;
+  display: flex;
+  width: 125px;
+  height: 31px;
+  text-align: start;
+  vertical-align: center;
+  align-items: center;
+  padding-left: 15px;
+  font-size: 12px;
+  font-weight: 400;
+  cursor: pointer;
+  background-color: #f0f3f7;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  &:hover {
+    background-color: #DEE2EA;
+  }
+  &.lastItem {
+    border-radius: 0 0 4px 4px;
+  }
+  p {
+    color: $black;
+  }
+
+  &.accountMenuDropdown {
+    z-index: 3;
+    display: flex;
+    width: calc(100% - 26px);
+    height: 31px;
+    align-self: center;
+    text-align: center;
+    vertical-align: center;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 400;
+    cursor: pointer;
+    background-color: #F8F9FB;
+    padding: 5px 13px;
+
+    &:hover {
+      background-color: #DEE2EA;
+    }
+
+  }
+
+  &.compoundGateDropdown {
+    .listItemRow {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      .editButton {
+        margin-left: 45px;
+      }
+      .removeButton {
+        margin-left: 5px;
+        margin-right: 10px;
+        display: inline-block;
+      }
+    }
+
+  }
+
+  &.standardGateDropdown {
+
+  }
+
+  &.burgerMenuDropdown {
+    @media screen and (min-width: $mobile-max-width) {
+      display: none;
+    }
+    width: 100%;
+    background: transparent;
+    box-shadow: none;
+
+    .burgerMenuDropdownNavButton {
+      @include text-nav-button;
+      grid-row: 2;
+      grid-column: 1 / span 2;
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      justify-content: space-between;
+      margin: 0 40px 0 0;
+      gap: 20px;
+      flex-grow: 0;
+      cursor: pointer;
+      max-width: 100%;
+
+      > a {
+        color: $gunpowder-gray;
+        text-decoration: none;
+
+        &.selected {
+          @include text-nav-button-bold;
+          color: $black;
+        }
+      }
+    }
+  }
+
+
+}

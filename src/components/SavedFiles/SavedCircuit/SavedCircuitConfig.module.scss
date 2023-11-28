@@ -1,0 +1,44 @@
+@import '../../../common/global.scss';
+
+
+.savedCircuitConfig {
+  z-index: 1;
+  align-self: center;
+  width: calc(100% - 5%);
+  height: 37px;
+  display: grid;
+  margin-bottom: 8px;
+  grid-template-columns: 40fr 55fr 5fr;
+
+  background: linear-gradient(180deg, #F2F4F8 0%, #F8F8F9 100%);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 1px;
+  margin-left: 10px;
+  padding: 0px 20px 6px 13px;
+
+  p {
+    text-align: start;
+    align-self: center;
+    &.buildName {
+      grid-column: 1;
+      @include text-h4;
+    }
+    &.date {
+      grid-column: 2;
+      @include text-normal-small;
+    }
+  }
+
+  .openOrDelete {
+    grid-column: 3;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    img {
+      cursor: pointer;
+      width: 17px;
+      height: 17px;
+      align-self: center;
+    }
+  }
+}

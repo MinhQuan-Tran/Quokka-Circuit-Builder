@@ -1,0 +1,38 @@
+{
+    "X": {
+        "name": "Pauli X gate",
+        "description": "Pauli X gate (π rotation over X-axis) classical computing equivalent: \"NOT\" gate."
+    },
+    "Y": {
+        "name": "Pauli Y gate",
+        "description": "Pauli Y gate (π rotation over Y-axis) classical computing equivalent: \"NOT\" gate."
+    },
+    "Z": {
+        "name": "Pauli Z gate",
+        "description": "Pauli Z gate (π rotation over Z-axis) classical computing equivalent: \"NOT\" gate."
+    },
+    "RX": {
+        "name": "Rotated Pauli X gate",
+        "description": "RX (Rotated Pauli X gate) is a single-qubit rotation through an angle of π/2 around the x-axis."
+    },
+    "RY": {
+        "name": "Rotated Pauli Y gate",
+        "description": "RY (Rotated Pauli Y gate) is a single-qubit rotation through an angle of π/2 around the y-axis."
+    },
+    "RZ": {
+        "name": "Rotated Pauli Z gate",
+        "description": "RZ (Rotated Pauli Z gate) is a single-qubit rotation through an angle of π/2 around the z-axis."
+    },
+    "H": {
+        "name": "Hadamard gate",
+        "description": "One qubit rotation, mapping the two qubit- basis states to two superposition states."
+    },
+    "CNOT": {
+        "name": "Controlled NOT gate",
+        "description": "CNOT or (Controlled Pauli-X) acts on 2 or more qubits."
+    },
+    "Measurement Gate": {
+        "name": "Measurement gate",
+        "description": "Used to observe the quantum state."
+    }
+}
